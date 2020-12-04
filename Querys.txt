@@ -1,0 +1,13 @@
+select full_address from ADDRESS where  ADDRESS.CITY='Istanbul';
+
+
+
+select FIRST_NAME from EMPLOYEES where hıre_date BETWEEN  '01-05-2016' AND '31-05-2016'
+
+
+
+select FIRST_NAME from CONTACTS where FIRST_NAME='Charlie' OR FIRST_NAME='Charlsie' ;
+
+
+
+select cnt_value from CONTACT where cnt_type='PHONE';

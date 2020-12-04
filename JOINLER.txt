@@ -1,0 +1,15 @@
+1-Bütçesi 300 tl olan projenin firma sahibini bulunuz
+
+select fırma.fırma_sahıbı from fırma INNER JOIN proje ON proje.f_ıd = fırma.f_ıd WHERE proje.proje_butce='1000 tl';
+
+2-Back-Endci yazılımcının ilgilendiği projenin firma dı,firma sahibi,proje süresi bilgilerini getiriniz
+
+select fırma.fırma_adı,fırma.fırma_sahıbı,proje.proje_sure from fırma f INNER JOIN proje p ON proje.f_ıd = fırma.f_ıd INNER JOIN developer d ON p.p_ıd=d.pıd WHERE d.yazılımcı_alanı='Back-End Developer';
+
+3-Demet Mutlu'nun markası için sürdürülen projeyi hangi developer devralmıştır?
+
+SELECT fırma.fırma_adı,fırma.fırma_sahıbı,proje.proje_sure FROM fırma  INNER JOIN proje  ON proje.f_ıd = fırma.f_ıd INNER JOIN developer  ON proje.p_ıd=DEVELOPER.pıd WHERE DEVELOPER.yazılımcı_alanı='Back-End Developer';
+
+4-Firmada yer alan Full-Stack developerın hangi proje ile ilgilendiğini bulunuz.
+
+SELECT proje.proje_adı FROM fırma  INNER JOIN proje  ON proje.f_ıd = fırma.f_ıd INNER JOIN developer  ON proje.p_ıd=DEVELOPER.pıd WHERE DEVELOPER.yazılımcı_alanı='Front-End Developer';

@@ -1,0 +1,26 @@
+1-XY tablosu altında developerları ve proje isimlerini sıralayınız.
+
+select developer.yazılımcı_adi AS XY
+from DEVELOPER 
+UNION 
+select proje.proje_adı AS XY 
+from PROJE ;
+2-Çalışan adı altında firmada çalışan elemanları proje bütçesi kolonunu kullanarak 2 defa sıralayınız
+
+select proje.proje_butce AS ÇALIŞAN
+from PROJE 
+UNION ALL 
+select developer.yazılımcı_adı AS ÇALIŞAN
+from DEVELOPER ; 
+3-Proje ve developer tablolarından idleri aynı olmayanları getiriniz
+select pıd from developer 
+MINUS
+select proje.p_ıd from proje  ;
+4-Projede aktif çalışan yazılımcı isimlerini proje tablosundaki elemanları baz alarak getiriniz
+select proje_butce
+from proje
+where p_ıd IN (
+    select developer.pıd from developer
+        INTERSECT
+    select proje.p_ıd from proje
+	);

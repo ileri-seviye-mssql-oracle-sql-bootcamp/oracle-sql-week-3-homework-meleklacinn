@@ -1,0 +1,25 @@
+
+----proje--
+INSERT INTO PROJE
+(P_ID, f_ıd,proje_adı,proje_sure, proje_eleman,proje_butce)
+VALUES (1,1,'Hepsi Burada Yeni Sezon Kısmı','1 ay','1000 tl','MELEK LAÇİN');
+
+INSERT INTO PROJE
+(P_ID, f_ıd,proje_adı,proje_sure, proje_eleman,proje_butce)
+VALUES (2,2,'TRENDYOL Tasarım(Front-end) ','2 ay','2000 tl','BERFİN MUTLU');
+
+INSERT INTO PROJE
+(P_ID, f_ıd,proje_adı,proje_sure, proje_eleman,proje_butce)
+VALUES (3,3,'Sahibinden.com hakkında kısmı','1 ay','1000 tl','ALİ YILMAZ');
+---developer---
+INSERT INTO DEVELOPER
+(d_ıd,f_ıd,pıd,yazılımcı_adı)
+VALUES (1,1,1,'MELEK LAÇİN');
+
+INSERT INTO DEVELOPER
+(d_ıd,f_ıd,pıd,yazılımcı_adı)
+VALUES (2,2,2,'BERFİN MUTLU');
+
+INSERT INTO DEVELOPER
+(d_ıd,f_ıd,pıd,yazılımcı_adı)
+VALUES (3,3,3,'ALİ YILMAZ');
